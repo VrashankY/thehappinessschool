@@ -1,17 +1,17 @@
 body {
   margin: 0;
   font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
-  background-color: #fdf6e4;
+  background-color: #fff9ed;
   color: #2d2d2d;
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #fff9ed;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e0dacb;
+  border-bottom: 1px solid #fff9ed;
 }
 
 .logo {
@@ -40,9 +40,19 @@ nav a {
 }
 
 .hero {
-  background-color: #f5db8c;
-  text-align: center;
-  padding: 3rem 1rem 4rem;
+  background-color: #fff9ed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
 }
 
 .hero h1 {
@@ -59,7 +69,7 @@ nav a {
 }
 
 .hero-image {
-  max-width: 180px;
+  max-width: 200px;
   border-radius: 12px;
   background-color: #fcf5e7;
   padding: 1rem;
@@ -70,19 +80,22 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem 2rem;
   padding: 4rem 2rem 2rem;
-  background-color: #f6f2e8;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
 .feature {
-  background-color: #fdfaf2;
+  background-color: #fdf6eb;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-  max-width: 260px;
+  flex: 1 1 calc(33.333% - 2rem);
+  min-width: 250px;
   text-align: left;
-  border: 1px solid #ece5d5;
+  border: 1px solid #f2e8d4;
+  box-sizing: border-box;
 }
 
 .feature h3 {
@@ -99,8 +112,7 @@ nav a {
 
 .section {
   padding: 3rem 1rem;
-  text-align: center;
-  background-color: #f6f2e8;
+  text-align: left;
 }
 
 .section h2 {
@@ -108,10 +120,11 @@ nav a {
   margin-bottom: 1.25rem;
   font-weight: 700;
   color: #2e2e2e;
+  text-align: left;
 }
 
 .section p {
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto;
   font-size: 1rem;
   line-height: 1.6;
@@ -119,7 +132,7 @@ nav a {
 }
 
 .service-block {
-  background-color: #f1eadb;
+  background-color: #f7f2e3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,10 +158,31 @@ nav a {
 .service-block img.icon-image {
   height: 60px;
   margin-left: 1.5rem;
-  background-color: #fdf6e4;
+  background-color: #fff9ed;
   padding: 0.75rem;
   border-radius: 8px;
-  box-shadow: 0 0 0 6px #fdf6e4;
+  box-shadow: 0 0 0 6px #fff9ed;
+}
+
+.signup-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #a3b18a;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #8da072;
+}
+
+.section-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 footer {
