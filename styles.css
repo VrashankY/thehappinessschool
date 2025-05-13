@@ -1,17 +1,17 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #F5EFE6;
-  color: #3A3A3A;
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  background-color: #fdf6e4;
+  color: #2d2d2d;
 }
 
 header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e0dacb;
 }
 
 .logo {
@@ -28,82 +28,86 @@ header {
 .logo h2 {
   font-size: 1.25rem;
   margin: 0;
+  font-weight: 700;
 }
 
 nav a {
   margin-left: 1.5rem;
   text-decoration: none;
-  color: #3A3A3A;
+  color: #2d2d2d;
   font-weight: 600;
   font-size: 0.95rem;
 }
 
 .hero {
-  background-color: #F8D26E;
+  background-color: #f5db8c;
   text-align: center;
-  padding: 4rem 1rem 2rem;
+  padding: 3rem 1rem 4rem;
 }
 
 .hero h1 {
-  font-size: 2.75rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: #2E2E2E;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #2d2d2d;
 }
 
 .hero p {
-  font-size: 1.15rem;
-  color: #444;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #4b4b4b;
+  margin-bottom: 2rem;
 }
 
 .hero-image {
-  max-width: 200px;
-  border-radius: 8px;
-  background-color: #F5EFE6;
+  max-width: 180px;
+  border-radius: 12px;
+  background-color: #fcf5e7;
   padding: 1rem;
+  box-shadow: 0 0 0 8px #fcf5e7;
 }
 
 .features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  padding: 3rem 1rem 2rem;
-  background-color: #F5EFE6;
+  gap: 2rem;
+  padding: 4rem 2rem 2rem;
+  background-color: #f6f2e8;
 }
 
 .feature {
-  background-color: #FFFFFF;
-  padding: 1.5rem 1.25rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  background-color: #fdfaf2;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
   max-width: 260px;
   text-align: left;
+  border: 1px solid #ece5d5;
 }
 
 .feature h3 {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: #222;
+  font-weight: 700;
+  color: #2e2e2e;
 }
 
 .feature p {
   font-size: 0.95rem;
-  color: #555;
+  color: #5a5a5a;
 }
 
 .section {
-  padding: 2.5rem 1rem;
+  padding: 3rem 1rem;
   text-align: center;
-  background-color: #F5EFE6;
+  background-color: #f6f2e8;
 }
 
 .section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #2E2E2E;
+  font-size: 1.9rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  color: #2e2e2e;
 }
 
 .section p {
@@ -111,46 +115,46 @@ nav a {
   margin: 0 auto;
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color: #4b4b4b;
 }
 
 .service-block {
-  background-color: #EDE7DA;
+  background-color: #f1eadb;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 750px;
   margin: 2rem auto;
   padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
 .service-block h3 {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #2E2E2E;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2d2d2d;
   margin-bottom: 0.5rem;
 }
 
 .service-block p {
   font-size: 0.95rem;
-  color: #444;
+  color: #4b4b4b;
 }
 
 .service-block img.icon-image {
-  height: 64px;
+  height: 60px;
   margin-left: 1.5rem;
-  background-color: #F5EFE6;
-  padding: 0.5rem;
+  background-color: #fdf6e4;
+  padding: 0.75rem;
   border-radius: 8px;
+  box-shadow: 0 0 0 6px #fdf6e4;
 }
 
 footer {
-  background-color: #A3B18A;
+  background-color: #a3b18a;
   color: white;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
 }
-
