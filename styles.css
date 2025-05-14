@@ -76,14 +76,30 @@ nav a {
   box-shadow: 0 0 0 8px #fcf5e7;
 }
 
+.section-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.features-section {
+  padding: 4rem 2rem 2rem;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.features-section h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #2e2e2e;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
 .features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem 2rem;
-  padding: 4rem 2rem 2rem;
-  max-width: 880px;
-  margin: 0 auto;
 }
 
 .feature {
@@ -131,58 +147,130 @@ nav a {
   color: #4b4b4b;
 }
 
-.service-block {
-  background-color: #f7f2e3;
+/* Help Section Cards */
+.services-grid {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 750px;
-  margin: 2rem auto;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #fdf6eb;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  flex: 1 1 calc(33.333% - 2rem);
+  min-width: 250px;
+  text-align: left;
+  border: 1px solid #f2e8d4;
+  box-sizing: border-box;
 }
 
-.service-block h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #2d2d2d;
+.service-card h3 {
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #2e2e2e;
 }
 
-.service-block p {
+.service-card p {
   font-size: 0.95rem;
-  color: #4b4b4b;
+  color: #5a5a5a;
+  margin-bottom: 1rem;
 }
 
-.service-block img.icon-image {
-  height: 60px;
-  margin-left: 1.5rem;
-  background-color: #fff9ed;
-  padding: 0.75rem;
-  border-radius: 8px;
-  box-shadow: 0 0 0 6px #fff9ed;
-}
-
-.signup-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
+.service-card .button {
   background-color: #a3b18a;
-  color: #fff;
-  border-radius: 6px;
+  color: white;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  font-size: 0.95rem;
 }
 
-.signup-btn:hover {
-  background-color: #8da072;
-}
-
-.section-wrapper {
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #fff9ed;
+  padding: 4rem 1rem;
   max-width: 750px;
   margin: 0 auto;
+}
+
+.testimonials-section h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #2e2e2e;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.testimonials-wrapper {
+  position: relative;
+}
+
+.testimonials-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+}
+
+.testimonial-card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  background-color: #fdf6eb;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  border: 1px solid #f2e8d4;
+}
+
+.testimonial-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+  color: #4b4b4b;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card strong {
+  color: #a3b18a;
+  font-size: 0.95rem;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #a3b18a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.scroll-left {
+  left: -20px;
+}
+
+.scroll-right {
+  right: -20px;
 }
 
 footer {
