@@ -8,19 +8,27 @@
 <script>
   if (navigator.share) {
     navigator.share({
-      title: 'Check out The Happiness School',
-      text: 'Join free happiness and wellness sessions!',
-      url: 'https://www.thehappinessschool.org/'
-    }).finally(() => {
-      // Optionally redirect back after a short delay
+      title: 'Discover The Happiness School',
+      text: 'Join free happiness and wellness sessions that can transform lives!',
+      url: 'https://www.thehappinessschool.org/'  // This is the link that will be shared
+    })
+    .then(() => {
+      console.log('Thanks for sharing!');
+      // Optional redirect after sharing
       setTimeout(() => {
         window.location.href = 'https://www.thehappinessschool.org/';
-      }, 700);
+      }, 1000);
+    })
+    .catch((err) => {
+      console.error('Share failed:', err);
+      // Fallback redirect if share is cancelled or fails
+      window.location.href = 'https://www.thehappinessschool.org/';
     });
   } else {
-    // Show alternative message or auto-redirect
+    // If Web Share API not supported, just go to your website
     window.location.href = 'https://www.thehappinessschool.org/';
   }
 </script>
 </body>
 </html>
+
