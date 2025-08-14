@@ -6,22 +6,12 @@
 </head>
 <body>
 <script>
-  if (navigator.share) {
     navigator.share({
       title: 'Discover The Happiness School',
       text: 'Join free happiness and wellness sessions that can transform lives!',
       url: 'https://www.thehappinessschool.org/'  // This is the link that will be shared
     })
-    .then(() => {
-      console.log('Thanks for sharing!');
-    })
-    .catch((err) => {
-      console.error('Share failed:', err);
-      
-    });
-  } else {
     
-  }
 </script>
 </body>
 </html>
