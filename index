@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Share The Happiness School</title>
+</head>
+<body>
+<script>
+  if (navigator.share) {
+    navigator.share({
+      title: 'Check out The Happiness School',
+      text: 'Join free happiness and wellness sessions!',
+      url: 'https://www.thehappinessschool.org/contribute'
+    }).finally(() => {
+      // Optionally redirect back after a short delay
+      setTimeout(() => {
+        window.location.href = 'https://www.thehappinessschool.org/contribute';
+      }, 700);
+    });
+  } else {
+    // Show alternative message or auto-redirect
+    window.location.href = 'https://www.thehappinessschool.org/contribute';
+  }
+</script>
+</body>
+</html>
